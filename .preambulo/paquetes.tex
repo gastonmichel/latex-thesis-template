@@ -1,0 +1,57 @@
+%-----------------------------------------------------------------------------%
+%------------------Paquetes---------------------------------------------------%
+%-----------------------------------------------------------------------------%
+%-------Configuracion de idioma-----------------------------------------------%
+\usepackage[english,spanish]{babel}
+\addto\captionsspanish
+{
+	\def\contentsname{\'{I}ndice de contenidos}
+	\def\listfigurename{\'{I}ndice de figuras}
+	\def\listtablename{\'{I}ndice de tablas}
+	\def\figurename{Figura}
+	\def\tablename{Tabla}
+	\def\bibname{Bibliograf\'{\i}a}
+}
+%------Configuracion de los epigrafes de figuras y tablas---------------------%
+\usepackage[width=0.95\textwidth,textfont=footnotesize,labelfont={bf,small}]{caption}
+%------Configuracion de encoding: latin1--------------------------------------%
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+%-----Configuracion de Bibliografia-------------------------------------------%
+\usepackage[nonamebreak,sort&compress]{natbib}
+\setcitestyle{numbers,square,comma}
+%-----Configuracion de hipervinculos (package hyperref)-----------------------%
+\usepackage{hyperref}
+\usepackage{color}
+\hypersetup{colorlinks=false,linkcolor=blue,citecolor=blue}
+%-----Configuración de espaciado (package setspace)---------------------------%
+\usepackage[onehalfspacing]{setspace}
+%\singlespacing		%para previsualizacion
+\onehalfspacing		%default
+%\doublespacing		%para correccion
+%-----Configuración de margenes de la pagina----------------------------------%
+\usepackage[a4paper,inner=3cm,outer=2.5cm,top=3cm,bottom=3cm]{geometry}
+\geometry{inner=3cm,outer=2.5cm,top=3cm,bottom=3cm}		% margenes minimos
+%\geometry{inner=4cm,outer=3cm,top=3.5cm,bottom=4cm}	% margenes maximos 
+%-----Paquetes adicionales----------------------------------------------------%
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[
+	per-mode=symbol,
+	list-final-separator={y},
+	list-pair-separator={, y},
+	list-separator={, },
+	range-phrase={ a },
+	output-decimal-marker={,},
+	retain-explicit-plus,
+	]{siunitx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{multicol}
+\usepackage{acronym}

@@ -1,0 +1,37 @@
+\documentclass[
+% Simple faz o doble faz:
+% 	oneside,	% menos de 100 paginas
+	twoside,	% mas de 100 paginas
+]{book}
+
+\input{.preambulo/paquetes}
+
+\includeonly{
+	capitulo,
+}
+
+\begin{document}
+
+\frontmatter
+\input{.frontmatter/dedicatoria}
+\input{.frontmatter/fe-de-erratas}
+\input{.frontmatter/simbolos}
+\input{.frontmatter/abreviaturas}
+\tableofcontents                
+\listoffigures                  
+\listoftables                   
+\input{.frontmatter/resumen}
+\input{.frontmatter/abstract}
+
+\mainmatter
+\include{capitulo}
+
+\appendix
+\include{apendice}
+
+\backmatter
+\bibliography{biblioteca}
+\input{.backmatter/publicaciones}
+\input{.backmatter/agradecimientos}
+
+\end{document}
